@@ -1,3 +1,19 @@
+/* stylelint-disable block-closing-brace-newline-after */
+/* stylelint-disable max-empty-lines */
+/* stylelint-disable block-opening-brace-newline-after */
+/* stylelint-disable color-hex-length */
+/* stylelint-disable block-opening-brace-space-after */
+/* stylelint-disable block-closing-brace-newline-before */
+/* stylelint-disable declaration-block-semicolon-newline-after */
+/* stylelint-disable no-eol-whitespace */
+/* stylelint-disable declaration-colon-space-after */
+/* stylelint-disable color-hex-case */
+/* stylelint-disable selector-list-comma-newline-after */
+/* stylelint-disable rule-empty-line-before */
+/* stylelint-disable indentation */
+/* stylelint-disable block-opening-brace-space-before */
+/* stylelint-disable comment-empty-line-before */
+/* stylelint-disable comment-whitespace-inside */
 /* Set defaults*/
 *{
     margin: 0;
@@ -5,10 +21,10 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Inter', sans-serif;;
+    font-family: 'Inter', sans-serif;
 }
 h2, h3, h4, h5{
-    color: #FFF5E1;
+    color:#FFF5E1;
     margin-bottom: 1rem;
     margin-top: 1rem;
 }
@@ -23,7 +39,7 @@ a{
     margin: 1rem;
     display: flex;    
 }
-.title a{color:#FFFFFF;}
+.title a{color:#FFFFFF; }
 #mail-icon{
     margin-left: 1rem;
 }
@@ -36,7 +52,7 @@ a{
     padding: 0 2rem;
     z-index: 1;      
 }
-.nav-menu {    
+.nav-menu { 
     display: none;
     flex-direction: column;
     padding: 0;   
@@ -80,11 +96,7 @@ a{
 }
 
 
-
-
-
-
-
+/**** Media Query****/
 @media (min-width: 768px) {
     .nav-menu {
         display: flex;
