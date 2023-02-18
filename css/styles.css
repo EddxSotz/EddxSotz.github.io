@@ -147,7 +147,9 @@ a{
 
 .background{
     background-color: #1C1A19;
-    height: 100vh;    
+    height: 100vh;
+    overflow: hidden;
+    position: relative;    
 }
 .main-section{
     padding: 8rem 2rem;
@@ -155,6 +157,7 @@ a{
 #main_text h1{
     font-size: 4.5rem;
     font-family: 'Crete Round', serif;
+    font-weight: normal;
     color: #FF6B00;
     line-height: 5rem;
 }

@@ -47,7 +47,7 @@ This is the second Microverse project for the first week consisting on a web res
 
 ### Key Features <a name="key-features"></a>
 
-> There are no special features at the moment
+> Responsive navigation bar
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -127,7 +127,7 @@ Install this project with:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
--Add 'About me' and 'Get in touch' section 
+-Add the 'Works' and 'About me' section 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
