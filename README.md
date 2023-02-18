@@ -48,7 +48,7 @@ This is the second Microverse project for the first week consisting on a web res
 ### Key Features <a name="key-features"></a>
 
 > Responsive navigation bar
-
+> Responsive grid layout
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -127,7 +127,7 @@ Install this project with:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
--Add the 'Works' and 'About me' section 
+-Add the 'Contact me' section
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
