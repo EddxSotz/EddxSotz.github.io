@@ -285,8 +285,9 @@ a{
 }
 /* normal Cards*/
 .work-1, .work-2, .work-3, .work-4, .work-5, .work-6 {
-    height: 435px;
+    height: fit-content;
     padding: 1rem;
+    min-height: 480px;  
 }
 
 /* Main project card*/
@@ -358,6 +359,7 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: left;
+    margin-bottom: 2rem;
 }
 #tags li{
     background-color: rgba(255, 255, 255, 0.24);
