@@ -158,10 +158,10 @@ a{
     position: relative;    
 }
 .main-section{
-    padding: 8rem 2rem;
+    padding: 8rem 1rem;
 }
 .main_text h1{
-    font-size: 4.5rem;
+    font-size: 3.1rem;
     font-family: 'Crete Round', serif;
     font-weight: normal;
     color: #FF6B00;
@@ -184,6 +184,21 @@ a{
         flex-direction: column;
         justify-content: flex-start;
     }
+    .main_text h1{
+        font-size: 3.1rem;
+        font-family: 'Crete Round', serif;
+        font-weight: normal;
+        color: #FF6B00;
+        line-height: 5rem;
+    }
+    .main_text h3{
+        font-size: 1.5rem;    
+    }
+    .main_text h5, .main_text li{
+        font-size: 1.1rem; 
+        font-weight: normal;
+    }
+    
     #Social_Media_Icons{
         display: flex;
         flex-direction: row;
@@ -194,7 +209,7 @@ a{
       }
     
     .main_text{
-        width: 75%;
+        width: 100%;
     }
    
     #hero_image{
@@ -206,18 +221,18 @@ a{
         #image-2{
             position: absolute;
             right: -450px;
-            top: 450px;
+            top: 15%;
         }
 }
 /*  Projects Section   */
 
 .my_work{
     height:fit-content;
-    padding: 8rem 2rem;    
+    padding: 8rem 1rem;    
 }
 
 .works_tittle{
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #091E42;
     margin-bottom: 4rem;
     font-family: 'Crete Round', serif;
@@ -282,14 +297,14 @@ a{
     margin: 0 auto;
 }
 .main_card p{
-    font-size:1.7rem;
+    font-size:1.2rem;
     color: #091E42;
     margin-bottom: 2rem;
 }
 
 #featured{
     color:#091E42;
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: 'Crete Round', serif;
 }
 #tags_featured{
@@ -301,7 +316,7 @@ a{
 #tags_featured li{
     padding: 8px;
     color: #091E42;
-    border: solid 2px #091E42;
+    border: solid 1px #091E42;
     margin-right: 5px;
 }
 .project-button{
@@ -355,20 +370,18 @@ a{
 #About{
     background-color: #262626;
     height: fit-content;
-    padding: 8rem 2rem;
+    padding: 8rem 1rem;
     position: relative;
     overflow: hidden;
 }
-/*#image-2{
-    position: absolute;
-        max-width: 60%;
-        right: -250px;
-        top: 100px;
-}*/
+
 .resume-button{
     background-color:#F55800;
     padding: 8px;
     color: white;
+    margin-top: 3rem;
+    display: block;
+    width:fit-content;
 }
 
 #skills{
@@ -378,9 +391,14 @@ a{
     flex-wrap: wrap;
     justify-content: space-around;
 }
+#skills h3{
+    font-size: 2rem;
+}
 #skills li{
     color:white;
     margin-bottom: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 @media (max-width: 768px){
@@ -388,5 +406,6 @@ a{
         flex-direction: column;
         align-content: center;
         text-align: center;
+        margin-top: 300px;
     }
 }
