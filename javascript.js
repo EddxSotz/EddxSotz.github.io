@@ -1,6 +1,6 @@
 const toggleButton = document.querySelector(".toggle-button");
 const navbarLinks = document.querySelector(".nav-menu");
-const title= document.querySelector(".title");
+const title= document.querySelector(".nav_title");
 
 
 toggleButton.addEventListener("click", () => {

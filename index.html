@@ -17,7 +17,7 @@
      
         <header>            
             <nav class="nav-bar">
-                <div class="title"><a href="index.html">Edy Soto</a></div>
+                <div class="nav_title"><a href="index.html">Edy Soto</a></div>
                 <ul class="nav-menu">
                     <li class="nav-item"><a href="#Portfolio">Portfolio</a></li>
                     <li class="nav-item"><a href="#About">About</a></li>
@@ -34,11 +34,11 @@
             <section class="main-section">
                 
                 <!-- My Introduction -->
-                <div class="main_text">
+                <div class="text_styles ">
                     <h1 >Hey There.</h1>
                     <h1>I'm Edy</h1>
-                    <h3 >I am a Software Developer</h3>
-                    <h5 >I help bring awesome web experiences to life, if you have a project in mind don't hesitate to contact me and I will bring your project to file</h5>
+                    <h4 >I am a Software Developer</h4>
+                    <h4 >I help bring awesome web experiences to life, if you have a project in mind don't hesitate to contact me and I will bring your project to file</h4>
                 </div>
                 <!-- Social media icons -->
                 <div id="Social_Media_Icons">
@@ -47,28 +47,30 @@
                     <a href="#"><img src="images/Angelist.svg" alt="Angelist Icon"></a>
                     <a href="#"><img src="images/Twitter.svg" alt="Twitter Icon"></a>
                     <a href="#"><img src="images/Medium.svg" alt="Medium Icon"></a>
-                </div>                               
-            </section>
-            <!-- Hero section image -->
-            <img src="images/Illustration-header.svg" id="hero_image" alt=""> 
+                </div>
+                <!-- Hero section image -->
+                <img src="images/Illustration-header.svg" id="hero_image" alt="">                                
+            </section>            
         </main>
 
      <!-- Recent Works -->
-        <section class="my_work" id="Portfolio">
-            <h3 class="works_tittle">My recent Works</h3>
-            <div class="grid-container">
-                <div class="work_top">
-                    <div class="main_card">
-                    <h3 id="featured">Multi-Post Stories</h3>
-                    <p>A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-                    <ul id="tags_featured"><li>css</li><li>html</li><li>bootstrap</li><li>ruby</li></ul>
-                    <a href="#" class="project-button">See Project</a>
-                    </div>
-                    <img src="images/Img_Placeholder.png" alt="">
+        <section class="my_work text_styles" id="Portfolio">
+            <h3>My recent Works</h3>
+
+            <div class="featured_project">
+                <div class="main_card">
+                <h3 id="featured">Multi-Post Stories</h3>
+                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+                <ul id="tags_featured"><li>css</li><li>html</li><li>bootstrap</li><li>ruby</li></ul>
+                <a href="#" class="project-button">See Project</a>
                 </div>
+                <img id="featured_img" src="images/Img_Placeholder.png" alt="">
+            </div>
+
+            <div class="grid-container">                
                 <div class="work-1">
                     <div class="card_content">
-                        <h3>Website Portfolio</h3>
+                        <h4>Website Portfolio</h4>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima voluptatibus saepe quae dolore </p>
                         <ul id="tags"><li>css</li><li>html</li><li>bootstrap</li><li>ruby</li></ul>
                         <a href="#" class="project-button">See Project</a>
@@ -76,7 +78,7 @@
                 </div>
                 <div class="work-2">
                     <div class="card_content">
-                        <h3>Data Dashboard</h3>
+                        <h4>Data Dashboard</h4>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima voluptatibus saepe quae dolore</p>
                         <ul id="tags"><li>css</li><li>html</li><li>bootstrap</li><li>ruby</li></ul>
                         <a href="#" class="project-button">See Project</a>
@@ -84,7 +86,7 @@
                 </div>
                 <div class="work-3">
                     <div class="card_content">
-                        <h3>Brand website</h3>
+                        <h4>Brand website</h4>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima voluptatibus saepe quae dolore</p>
                         <ul id="tags"><li>css</li><li>html</li><li>bootstrap</li><li>ruby</li></ul>
                         <a href="#" class="project-button">See Project</a>
@@ -92,7 +94,7 @@
                 </div>
                 <div class="work-4">
                     <div class="card_content">
-                        <h3>Shopping Website</h3>
+                        <h4>Shopping Website</h4>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima voluptatibus saepe quae dolore</p>
                         <ul id="tags"><li>css</li><li>html</li><li>bootstrap</li><li>ruby</li></ul>
                         <a href="#" class="project-button">See Project</a>
@@ -100,7 +102,7 @@
                 </div>
                 <div class="work-5">
                     <div class="card_content">
-                        <h3>School Website</h3>
+                        <h4>School Website</h4>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima voluptatibus saepe quae dolore</p>
                         <ul id="tags"><li>css</li><li>html</li><li>bootstrap</li><li>ruby</li></ul>
                         <a href="#" class="project-button">See Project</a>
@@ -108,7 +110,7 @@
                 </div>
                 <div class="work-6">
                     <div class="card_content">
-                        <h3>Portfolio Website</h3>
+                        <h4>Portfolio Website</h4>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima voluptatibus saepe quae dolore</p>
                         <ul id="tags"><li>css</li><li>html</li><li>bootstrap</li><li>ruby</li></ul>
                         <a href="#" class="project-button">See Project</a>
@@ -119,22 +121,47 @@
         </section>
 
      <!-- About -->
-     <section id="About">
-        <div class="main_text">
-            <h1 >About me</h1>
-            <h5 >Hey there! I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</h5>
-            <a class="resume-button" href="#">Get My Resume</a>
+     <section id="About" class="text_styles">        
+        <div class="about_container">
+            <div class="about_text">
+                <h1>About me</h1>
+                <h4>Hey there! I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</h4>
+                <a class="project-button" id="resume_button" href="#">Get My Resume</a>
+            </div>
+            <img src="images/Group.svg" id="about_image" alt="">            
         </div>
-        <img src="images/Group.svg" id="image-2" alt="">        
-        <div id="skills">            
-                <ul><li><h3>Languages</h3></li><li>Javascript</li><li>Ruby</li><li>Html</li><li>Css</li></ul>             
-                <ul><li><h3>Frameworks</h3></li><li>Bootstrap</li><li>Ruby on Rails</li><li>RS Pec</li><li>CapyBara</li><li>Selenium</li></ul>            
-                <ul><li><h3>Skills</h3></li><li>Codekit</li><li>Github</li><li>Codepen</li><li>Gitlab</li><li>Terminal</li></ul>
-        </div>                 
-                       
+        
+        <span class="line"></span>         
+        <div id="skills" class="text_styles">            
+            <ul><li><h4>Languages</h4></li><li>Javascript</li><li>Ruby</li><li>Html</li><li>Css</li></ul>             
+            <ul><li><h4>Frameworks</h4></li><li>Bootstrap</li><li>Ruby on Rails</li><li>RS Pec</li><li>CapyBara</li><li>Selenium</li></ul>            
+            <ul><li><h4>Skills</h4></li><li>Codekit</li><li>Github</li><li>Codepen</li><li>Gitlab</li><li>Terminal</li></ul>
+         </div>               
      </section>
-     <!-- Contact -->
+     
+     <!-- Contact me Section-->
+
+     <div class="contact_container text_styles">
+        <h3>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3>
+        
+        <form action="https://formspree.io/f/xdovgbzg" method="POST" id="contact_form">
+            <input type="text" name="full_name" placeholder="Full name" maxlength="30" autocomplete="on" required>
+            <input type="email" name="email" placeholder="Email address" autocomplete="on" required>
+            <textarea name="message" id="text_box" placeholder="Enter text here" maxlength="500" required></textarea>        
+            <input type="submit" value="Get in touch" id="contact_button"> 
+        </form>
+
+    </div>
      <!-- Footer -->
+     <footer>
+        <div id="footer_icons">
+            <a href="#"><img src="images/Git-Hub.svg" alt="Git-Hub Icon"></a>
+            <a href="#"><img src="images/Linkedin.svg" alt="Linkedin Icon"></a>
+            <a href="#"><img src="images/Angelist.svg" alt="Angelist Icon"></a>
+            <a href="#"><img src="images/Twitter.svg" alt="Twitter Icon"></a>
+            <a href="#"><img src="images/Medium.svg" alt="Medium Icon"></a>
+        </div>
+     </footer>
     <!-- Javascript -->
     <script src="javascript.js"></script>
 </body>
