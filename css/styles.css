@@ -511,6 +511,7 @@ body {
   background-color: white;
   border: solid 2px #ff8843;
   cursor: pointer;
+  color: #ff8843;
 }
 
 @media (min-width: 768px) {
