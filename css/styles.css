@@ -508,7 +508,8 @@ body {
 }
 
 #contact_button:hover {
-  background-color: #ff8843;
+  background-color: white;
+  border: solid 2px #ff8843;
   cursor: pointer;
 }
 
