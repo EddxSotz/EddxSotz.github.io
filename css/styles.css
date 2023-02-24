@@ -126,6 +126,10 @@ body {
 
 .nav-item a:hover {
   background-color: #555;
+  transform: translateY(-5px);
+  transition: transform 0.3s;
+  transition-timing-function: ease-out;
+  box-shadow: 0 0.5em 0.5em -0.4em #F55800;
 }
 
 .toggle-button {
