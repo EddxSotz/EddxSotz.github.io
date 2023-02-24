@@ -293,8 +293,8 @@ body {
 .work-4,
 .work-5,
 .work-6 {
-  min-height: 386px;
-  max-height: 435px;
+  min-height: 430px;
+  max-height: 445px;
   padding: 1rem;
 }
 
@@ -304,10 +304,17 @@ body {
   font-weight: bold;
   display: block;
   width: fit-content;
+  border-radius: 5%;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .project-button:hover {
-  background-color: #ff8843;
+  background-color: rgba(255, 255, 255, 0);
+  color: #f55800;
+  border: 2px solid #f55800;
+  box-shadow: 0 0.5em 0.5em -0.4em #f55800;
+  transform: translateY(0.1em);
+  cursor: pointer;
 }
 
 /* Featured project card */
@@ -538,7 +545,7 @@ body {
 }
 
 #contact_button:hover {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0);
   border: solid 2px #ff8843;
   cursor: pointer;
   color: #ff8843;
