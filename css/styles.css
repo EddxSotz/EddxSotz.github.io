@@ -89,6 +89,14 @@ body {
 
 .nav_title a {
   color: white;
+  display: block;
+}
+
+.nav_title a:hover {
+  transform: translateX(2rem);
+  transition: transform 2s;
+  transition-timing-function: ease-out;
+  transition-delay: 0.1s;
 }
 
 #mail-icon {
