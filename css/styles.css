@@ -232,12 +232,22 @@ body {
 
 /* PROJECTS SECTION - GRID LAYOUT */
 
-.my_work > h3 {
-  margin-bottom: 3.25rem;
-}
-
 .my_work {
   padding: 8.13rem 1rem;
+}
+
+.works_title {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3.25rem;
+  text-align: center;
+}
+
+#top_line {
+  display: block;
+  width: 100%;
+  border-bottom: solid 2px #091e42;
+  margin: 4rem auto;
 }
 
 .grid-container {
@@ -359,6 +369,18 @@ body {
     max-width: 50%;
     margin-bottom: 0;
   }
+
+  .works_title {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    text-align: left;
+  }
+
+  #top_line {
+    width: 62%;
+    margin: 0;
+  }
 }
 
 /* Regular cards */
@@ -414,6 +436,10 @@ body {
   justify-content: space-around;
 }
 
+#skills img {
+  margin-right: 0.5rem;
+}
+
 #skills h4 {
   font-weight: bold;
 }
@@ -459,6 +485,10 @@ body {
     align-content: center;
     text-align: center;
     margin-top: 8rem;
+  }
+
+  #skills li {
+    text-align: left;
   }
 }
 
@@ -517,6 +547,7 @@ body {
 @media (min-width: 768px) {
   .contact_container {
     grid-template-columns: repeat(2, 1fr);
+    padding: 8.13rem 4rem;
   }
 
   .contact_container h3 {
