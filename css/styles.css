@@ -84,20 +84,18 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   margin: 1rem;
-  display: flex;
+  /* display: flex; */
 }
 
-.nav_title a {
+.nav_title * {
   color: white;
   display: block;
 }
 
-.nav_title a:hover {
-  transform: translateX(2rem);
-  transition: transform 2s;
-  transition-timing-function: ease-out;
-  transition-delay: 0.1s;
-}
+.nav_title:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s;
+  transition-timing-function: ease-out;}
 
 #mail-icon {
   margin-left: 1rem;
@@ -174,9 +172,6 @@ body {
     display: none;
   }
 
-  .title {
-    display: flex;
-  }
 }
 
 /****** Hero Section ********/
