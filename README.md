@@ -120,6 +120,8 @@ Install this project with:
 
 - GitHub: [@githubhandle](https://github.com/EddxSotz)
 
+👤 **Junior Garcia**
+- GitHub: [@githubhandle](https://github.com/JuniorGarciaRodriguez)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
