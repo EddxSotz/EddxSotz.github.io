@@ -84,15 +84,27 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   margin: 1rem;
-  display: flex;
 }
 
-.nav_title a {
+.nav_title * {
   color: white;
+  display: block;
+}
+
+.nav_title:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s;
+  transition-timing-function: ease-out;
 }
 
 #mail-icon {
   margin-left: 1rem;
+}
+
+#mail-icon:hover {
+  transition: transform 1s;
+  transition-timing-function: ease-in-out;
+  transform: rotate(180deg);
 }
 
 .nav-menu {
@@ -120,6 +132,10 @@ body {
 
 .nav-item a:hover {
   background-color: #555;
+  transform: translateY(-5px);
+  transition: transform 0.3s;
+  transition-timing-function: ease-out;
+  box-shadow: 0 0.5em 0.5em -0.4em #f55800;
 }
 
 .toggle-button {
@@ -128,6 +144,12 @@ body {
   right: 2rem;
   top: 1rem;
   height: 2rem;
+}
+
+.toggle-button:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s;
+  transition-timing-function: ease-out;
 }
 
 .toggle-button.active {
@@ -164,10 +186,6 @@ body {
 
   .toggle-button {
     display: none;
-  }
-
-  .title {
-    display: flex;
   }
 }
 
@@ -293,8 +311,8 @@ body {
 .work-4,
 .work-5,
 .work-6 {
-  min-height: 386px;
-  max-height: 435px;
+  min-height: 430px;
+  max-height: 445px;
   padding: 1rem;
 }
 
@@ -304,10 +322,17 @@ body {
   font-weight: bold;
   display: block;
   width: fit-content;
+  border-radius: 5%;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .project-button:hover {
-  background-color: #ff8843;
+  background-color: rgba(255, 255, 255, 0);
+  color: #f55800;
+  border: 2px solid #f55800;
+  box-shadow: 0 0.5em 0.5em -0.4em #f55800;
+  transform: translateY(-0.2em);
+  cursor: pointer;
 }
 
 /* Featured project card */
@@ -519,6 +544,10 @@ body {
   padding: 1rem;
 }
 
+#contact_form input:hover {
+  box-shadow: 0 0.9em 0.8em -0.4em #091e42;
+}
+
 #text_box {
   border: none;
   background-color: #fbf8f7;
@@ -535,13 +564,17 @@ body {
   margin-inline: auto;
   font-size: var(--button_font_size);
   color: var(--button_font_color);
+  border-radius: 5%;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 #contact_button:hover {
-  background-color: white;
-  border: solid 2px #ff8843;
+  background-color: rgba(255, 255, 255, 0);
+  color: #f55800;
+  border: 2px solid #f55800;
+  box-shadow: 0 0.5em 0.5em -0.4em #f55800;
+  transform: translateY(-0.2em);
   cursor: pointer;
-  color: #ff8843;
 }
 
 @media (min-width: 768px) {
