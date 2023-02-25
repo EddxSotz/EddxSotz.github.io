@@ -84,7 +84,6 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   margin: 1rem;
-  /* display: flex; */
 }
 
 .nav_title * {
@@ -95,10 +94,17 @@ body {
 .nav_title:hover {
   transform: translateY(-5px);
   transition: transform 0.3s;
-  transition-timing-function: ease-out;}
+  transition-timing-function: ease-out;
+}
 
 #mail-icon {
   margin-left: 1rem;
+}
+
+#mail-icon:hover {
+  transition: transform 1s;
+  transition-timing-function: ease-in-out;
+  transform: rotate(180deg);
 }
 
 .nav-menu {
@@ -129,7 +135,7 @@ body {
   transform: translateY(-5px);
   transition: transform 0.3s;
   transition-timing-function: ease-out;
-  box-shadow: 0 0.5em 0.5em -0.4em #F55800;
+  box-shadow: 0 0.5em 0.5em -0.4em #f55800;
 }
 
 .toggle-button {
@@ -138,6 +144,12 @@ body {
   right: 2rem;
   top: 1rem;
   height: 2rem;
+}
+
+.toggle-button:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s;
+  transition-timing-function: ease-out;
 }
 
 .toggle-button.active {
@@ -175,7 +187,6 @@ body {
   .toggle-button {
     display: none;
   }
-
 }
 
 /****** Hero Section ********/
@@ -320,7 +331,7 @@ body {
   color: #f55800;
   border: 2px solid #f55800;
   box-shadow: 0 0.5em 0.5em -0.4em #f55800;
-  transform: translateY(0.1em);
+  transform: translateY(-0.2em);
   cursor: pointer;
 }
 
@@ -533,6 +544,10 @@ body {
   padding: 1rem;
 }
 
+#contact_form input:hover {
+  box-shadow: 0 0.9em 0.8em -0.4em #091e42;
+}
+
 #text_box {
   border: none;
   background-color: #fbf8f7;
@@ -549,13 +564,17 @@ body {
   margin-inline: auto;
   font-size: var(--button_font_size);
   color: var(--button_font_color);
+  border-radius: 5%;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 #contact_button:hover {
   background-color: rgba(255, 255, 255, 0);
-  border: solid 2px #ff8843;
+  color: #f55800;
+  border: 2px solid #f55800;
+  box-shadow: 0 0.5em 0.5em -0.4em #f55800;
+  transform: translateY(-0.2em);
   cursor: pointer;
-  color: #ff8843;
 }
 
 @media (min-width: 768px) {
