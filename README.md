@@ -32,8 +32,9 @@
 # 📖 Personal Portfolio<a name="about-project"></a>
 
 
+Portfolio project part of the Microverse Curriculum. Built with no Linter errors, correct GitHub Flow and properly documented. 
 
-This is the second Microverse project for the first week consisting on a web responsive personal portfolio 
+Live version at: https://eddxsotz.github.io/
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -46,15 +47,14 @@ This is the second Microverse project for the first week consisting on a web res
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
-
-> Responsive navigation bar
-> Responsive grid layout
+<ul>
+<li>Responsive navigation bar</li>
+<li>Responsive grid layout</li>
+<li>CSS transitions</li>
+<li>Contact me form data is received by Formspree.io</li>
+</ul>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-
 
 
 <!-- GETTING STARTED -->
@@ -120,7 +120,8 @@ Install this project with:
 
 - GitHub: [@githubhandle](https://github.com/EddxSotz)
 
-👤 **Junior Garcia**
+## 👥 Contributors <a name="authors"></a>
+👤 **Junior Garcia** 
 - GitHub: [@githubhandle](https://github.com/JuniorGarciaRodriguez)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -129,7 +130,7 @@ Install this project with:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
--Add the 'Contact me' section
+-None for now
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
