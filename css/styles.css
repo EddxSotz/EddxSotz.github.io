@@ -101,10 +101,10 @@ body {
   margin-left: 1rem;
 }
 
-#mail-icon:hover {
+.nav-item a:hover #mail-icon {
   transition: transform 1s;
   transition-timing-function: ease-in-out;
-  transform: rotate(180deg);
+  transform: rotate(360deg);
 }
 
 .nav-menu {
@@ -311,9 +311,8 @@ body {
 .work-4,
 .work-5,
 .work-6 {
-  min-height: 430px;
-  max-height: 445px;
-  padding: 1rem;
+  max-height: 423px;
+  min-height: 405px;
 }
 
 .project-button {
@@ -327,10 +326,8 @@ body {
 }
 
 .project-button:hover {
-  background-color: rgba(255, 255, 255, 0);
-  color: #f55800;
   border: 2px solid #f55800;
-  box-shadow: 0 0.5em 0.5em -0.4em #f55800;
+  box-shadow: 0 0.5em 0.5em -0.4em #091e42;
   transform: translateY(-0.2em);
   cursor: pointer;
 }
@@ -415,6 +412,8 @@ body {
 
 .card_content {
   margin-top: 8rem;
+  background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
+  padding: 1rem;
 }
 
 .card_content > h4 {
@@ -448,6 +447,7 @@ body {
 
 #resume_button {
   margin-top: 2rem;
+  position: absolute;
 }
 
 #about_image {
@@ -524,6 +524,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 2rem;
+  height: fit-content;
 }
 
 .contact_container h3 {
@@ -581,6 +582,7 @@ body {
   .contact_container {
     grid-template-columns: repeat(2, 1fr);
     padding: 8.13rem 4rem;
+    height: 100vh;
   }
 
   .contact_container h3 {
