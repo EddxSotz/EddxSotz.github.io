@@ -1,173 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-     <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" />
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-     <!-- Nav Bar -->
-     
-        <header>            
-            <nav class="nav-bar">
-                <div class="nav_title"><a href="index.html">Edd-Dev</a></div>
-                <ul class="nav-menu">
-                    <li class="nav-item"><a href="#Portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a href="#About">About</a></li>
-                    <li class="nav-item"><a href="#Contact">Contact <img src="images/MailIcon.svg" id="mail-icon" alt=""></a></li>
-                </ul> 
-                <a href="#" class="toggle-button"><img class= "icon"src="images/BurgerButton.svg"  alt=""></a>
-                              
-            </nav>        
-        </header>
-        
-     
-     <!-- Hero Section -->
-        <main class="background">
-            <section class="main-section">
-                
-                <!-- My Introduction -->
-                <div class="text_styles ">
-                    <h1>Hey There.</h1>
-                    <h1>I'm Edy</h1>
-                    <h4>Welcome to my portfolio website!</h4>
-                    <h4>I'm a web developer with a passion for crafting beautiful and functional websites. I specialize in creating custom websites using modern technologies such as HTML, CSS and JavaScript</h4>
-                </div>
-                <!-- Social media icons -->
-                <div id="Social_Media_Icons">
-                    <a href="#"><img src="images/Git-Hub.svg" alt="Git-Hub Icon"></a>
-                    <a href="#"><img src="images/Linkedin.svg" alt="Linkedin Icon"></a>
-                    <a href="#"><img src="images/Angelist.svg" alt="Angelist Icon"></a>
-                    <a href="#"><img src="images/Twitter.svg" alt="Twitter Icon"></a>
-                    <a href="#"><img src="images/Medium.svg" alt="Medium Icon"></a>
-                </div>
-                <!-- Hero section image -->
-                <img src="images/Illustration-header.svg" id="hero_image" alt="Hero section image">                                
-            </section>            
-        </main>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Nav Bar -->
 
-     <!-- Recent Works -->
-        <section class="my_work text_styles" id="Portfolio">
+    <header>
+      <nav class="nav-bar">
+        <div class="nav_title"><a href="index.html">Edd-Dev</a></div>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="#Portfolio">Portfolio</a></li>
+          <li class="nav-item"><a href="#About">About</a></li>
+          <li class="nav-item">
+            <a href="#Contact"
+              >Contact <img src="images/MailIcon.svg" id="mail-icon" alt=""
+            /></a>
+          </li>
+        </ul>
+        <a href="#" class="toggle-button"><img class="icon" src="images/BurgerButton.svg" alt="toggle Button"/></a>      
+        <a href="#" class="close-button"><img class="icon" src="images/CloseBtn.svg" alt="Close button"/></a>
+      </nav>
+    </header>
 
-            <div class="works_title">
-            <h3>My recent Works</h3>
-            <span id="top_line"></span>
-            </div>
-            
-
-            <div class="featured_project">
-                <div class="main_card">
-                <h3 id="featured">Multi-Post Stories</h3>
-                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-                <ul id="tags_featured"><li>css</li><li>html</li><li>bootstrap</li><li>ruby</li></ul>
-                <a href="#" class="project-button">See Project</a>
-                </div>
-                <img id="featured_img" src="images/Img_Placeholder.png" alt="featured project image">
-            </div>
-
-            <div class="grid-container">                
-                <div class="work-1">
-                    <div class="card_content">
-                        <h4>Website Portfolio</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima voluptatibus saepe quae dolore </p>
-                        <ul id="tags"><li>css</li><li>html</li><li>bootstrap</li><li>ruby</li></ul>
-                        <a href="#" class="project-button">See Project</a>
-                    </div>
-                </div>
-                <div class="work-2">
-                    <div class="card_content">
-                        <h4>Data Dashboard</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima voluptatibus saepe quae dolore</p>
-                        <ul id="tags"><li>css</li><li>html</li><li>bootstrap</li><li>ruby</li></ul>
-                        <a href="#" class="project-button">See Project</a>
-                    </div>
-                </div>
-                <div class="work-3">
-                    <div class="card_content">
-                        <h4>Brand website</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima voluptatibus saepe quae dolore</p>
-                        <ul id="tags"><li>css</li><li>html</li><li>bootstrap</li><li>ruby</li></ul>
-                        <a href="#" class="project-button">See Project</a>
-                    </div>
-                </div>
-                <div class="work-4">
-                    <div class="card_content">
-                        <h4>Shopping Website</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima voluptatibus saepe quae dolore</p>
-                        <ul id="tags"><li>css</li><li>html</li><li>bootstrap</li><li>ruby</li></ul>
-                        <a href="#" class="project-button">See Project</a>
-                    </div>
-                </div>
-                <div class="work-5">
-                    <div class="card_content">
-                        <h4>School Website</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima voluptatibus saepe quae dolore</p>
-                        <ul id="tags"><li>css</li><li>html</li><li>bootstrap</li><li>ruby</li></ul>
-                        <a href="#" class="project-button">See Project</a>
-                    </div>
-                </div>
-                <div class="work-6">
-                    <div class="card_content">
-                        <h4>Portfolio Website</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima voluptatibus saepe quae dolore</p>
-                        <ul id="tags"><li>css</li><li>html</li><li>bootstrap</li><li>ruby</li></ul>
-                        <a href="#" class="project-button">See Project</a>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-     <!-- About -->
-     <section id="About" class="text_styles">        
-        <div class="about_container">
-            <div class="about_text">
-                <h1>About me</h1>
-                <h4>Whether you're looking for a new website, a redesign of an existing one, or need help with a specific project, I'm here to help. Let's work together to create a website that showcases your brand and delivers results.</h4>
-                <a class="project-button" id="resume_button" href="#">Get My Resume</a>
-            </div>
-            <img src="images/Group.svg" id="about_image" alt="">            
+    <!-- Hero Section -->
+    <main class="background">
+      <section class="main-section">
+        <!-- My Introduction -->
+        <div class="text_styles">
+          <h1>Hey There.</h1>
+          <h1>I'm Edy</h1>
+          <h4>Welcome to my portfolio website!</h4>
+          <h4>
+            I'm a web developer with a passion for crafting beautiful and
+            functional websites. I specialize in creating custom websites using
+            modern technologies such as HTML, CSS and JavaScript
+          </h4>
         </div>
-        
-        <span class="line"></span>         
-        <div id="skills" class="text_styles">            
-            <ul><li><h4><img src="images/Diamond.svg" alt="Diamond shape">Languages</h4></li><li>Javascript</li><li>Ruby</li><li>Html</li><li>Css</li></ul>             
-            <ul><li><h4><img src="images/Square.svg" alt="Square shape">Frameworks</h4></li><li>Bootstrap</li><li>Ruby on Rails</li><li>RS Pec</li><li>CapyBara</li><li>Selenium</li></ul>            
-            <ul><li><h4><img src="images/Circle.svg" alt="circle shape"> Skills</h4></li><li>Codekit</li><li>Github</li><li>Codepen</li><li>Gitlab</li><li>Terminal</li></ul>
-         </div>               
-     </section>
-     
-     <!-- Contact me Section-->
+        <!-- Social media icons -->
+        <div id="Social_Media_Icons">
+          <a href="#"><img src="images/Git-Hub.svg" alt="Git-Hub Icon" /></a>
+          <a href="#"><img src="images/Linkedin.svg" alt="Linkedin Icon" /></a>
+          <a href="#"><img src="images/Angelist.svg" alt="Angelist Icon" /></a>
+          <a href="#"><img src="images/Twitter.svg" alt="Twitter Icon" /></a>
+          <a href="#"><img src="images/Medium.svg" alt="Medium Icon" /></a>
+        </div>
+        <!-- Hero section image -->
+        <img
+          src="images/Illustration-header.svg"
+          id="hero_image"
+          alt="Hero section image"
+        />
+      </section>
+    </main>
 
-     <div class="contact_container text_styles" id="Contact">
-        <h3>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3>
-        
-        <form action="https://formspree.io/f/xdovgbzg" method="POST" id="contact_form">
-            <input type="text" name="full_name" placeholder="Full name" maxlength="30" autocomplete="on" required>
-            <input type="email" name="email" placeholder="Email address" autocomplete="on" required>
-            <textarea name="message" id="text_box" placeholder="Enter text here" maxlength="500" required></textarea>        
-            <input type="submit" value="Get in touch" id="contact_button"> 
-        </form>
+    <!-- Recent Works -->
+    <section class="my_work text_styles" id="Portfolio">
+      <div class="works_title">
+        <h3>My recent Works</h3>
+        <span id="top_line"></span>
+      </div>
 
+      <div class="featured_project">
+        <div class="main_card">
+          <h3 id="featured">Multi-Post Stories</h3>
+          <p>
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required. This has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a standard dummy
+            text.
+          </p>
+          <ul id="tags_featured">
+            <li>css</li>
+            <li>html</li>
+            <li>bootstrap</li>
+            <li>ruby</li>
+          </ul>
+          <a href="#" class="project-button">See Project</a>
+        </div>
+        <img
+          id="featured_img"
+          src="images/Img_Placeholder.png"
+          alt="featured project image"
+        />
+      </div>
+
+      <div class="grid-container">
+        <div class="work-1">
+          <div class="card_content">
+            <h4>Website Portfolio</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima
+              voluptatibus saepe quae dolore
+            </p>
+            <ul id="tags">
+              <li>css</li>
+              <li>html</li>
+              <li>bootstrap</li>
+              <li>ruby</li>
+            </ul>
+            <a href="#" class="project-button">See Project</a>
+          </div>
+        </div>
+        <div class="work-2">
+          <div class="card_content">
+            <h4>Data Dashboard</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima
+              voluptatibus saepe quae dolore
+            </p>
+            <ul id="tags">
+              <li>css</li>
+              <li>html</li>
+              <li>bootstrap</li>
+              <li>ruby</li>
+            </ul>
+            <a href="#" class="project-button">See Project</a>
+          </div>
+        </div>
+        <div class="work-3">
+          <div class="card_content">
+            <h4>Brand website</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima
+              voluptatibus saepe quae dolore
+            </p>
+            <ul id="tags">
+              <li>css</li>
+              <li>html</li>
+              <li>bootstrap</li>
+              <li>ruby</li>
+            </ul>
+            <a href="#" class="project-button">See Project</a>
+          </div>
+        </div>
+        <div class="work-4">
+          <div class="card_content">
+            <h4>Shopping Website</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima
+              voluptatibus saepe quae dolore
+            </p>
+            <ul id="tags">
+              <li>css</li>
+              <li>html</li>
+              <li>bootstrap</li>
+              <li>ruby</li>
+            </ul>
+            <a href="#" class="project-button">See Project</a>
+          </div>
+        </div>
+        <div class="work-5">
+          <div class="card_content">
+            <h4>School Website</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima
+              voluptatibus saepe quae dolore
+            </p>
+            <ul id="tags">
+              <li>css</li>
+              <li>html</li>
+              <li>bootstrap</li>
+              <li>ruby</li>
+            </ul>
+            <a href="#" class="project-button">See Project</a>
+          </div>
+        </div>
+        <div class="work-6">
+          <div class="card_content">
+            <h4>Portfolio Website</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima
+              voluptatibus saepe quae dolore
+            </p>
+            <ul id="tags">
+              <li>css</li>
+              <li>html</li>
+              <li>bootstrap</li>
+              <li>ruby</li>
+            </ul>
+            <a href="#" class="project-button">See Project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="About" class="text_styles">
+      <div class="about_container">
+        <div class="about_text">
+          <h1>About me</h1>
+          <h4>
+            Whether you're looking for a new website, a redesign of an existing
+            one, or need help with a specific project, I'm here to help. Let's
+            work together to create a website that showcases your brand and
+            delivers results.
+          </h4>
+          <a class="project-button" id="resume_button" href="#"
+            >Get My Resume</a
+          >
+        </div>
+        <img src="images/Group.svg" id="about_image" alt="" />
+      </div>
+
+      <span class="line"></span>
+      <div id="skills" class="text_styles">
+        <ul>
+          <li>
+            <h4>
+              <img src="images/Diamond.svg" alt="Diamond shape" />Languages
+            </h4>
+          </li>
+          <li>Javascript</li>
+          <li>Ruby</li>
+          <li>Html</li>
+          <li>Css</li>
+        </ul>
+        <ul>
+          <li>
+            <h4>
+              <img src="images/Square.svg" alt="Square shape" />Frameworks
+            </h4>
+          </li>
+          <li>Bootstrap</li>
+          <li>Ruby on Rails</li>
+          <li>RS Pec</li>
+          <li>CapyBara</li>
+          <li>Selenium</li>
+        </ul>
+        <ul>
+          <li>
+            <h4><img src="images/Circle.svg" alt="circle shape" /> Skills</h4>
+          </li>
+          <li>Codekit</li>
+          <li>Github</li>
+          <li>Codepen</li>
+          <li>Gitlab</li>
+          <li>Terminal</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact me Section-->
+
+    <div class="contact_container text_styles" id="Contact">
+      <h3>
+        I'm always interested in hearing about new projects, so if you'd like to
+        chat please get in touch.
+      </h3>
+
+      <form
+        action="https://formspree.io/f/xdovgbzg"
+        method="POST"
+        id="contact_form"
+      >
+        <input
+          type="text"
+          name="full_name"
+          placeholder="Full name"
+          maxlength="30"
+          autocomplete="on"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Email address"
+          autocomplete="on"
+          required
+        />
+        <textarea
+          name="message"
+          id="text_box"
+          placeholder="Enter text here"
+          maxlength="500"
+          required
+        ></textarea>
+        <input type="submit" value="Get in touch" id="contact_button" />
+      </form>
     </div>
-     <!-- Footer -->
-     <footer>
-        <div id="footer_icons">
-            <a href="#"><img src="images/GitHub_dark.svg" alt="Git-Hub Icon"></a>
-            <a href="#"><img src="images/Linkedin_dark.svg" alt="Linkedin Icon"></a>
-            <a href="#"><img src="images/Angelist_dark.svg" alt="Angelist Icon"></a>
-            <a href="#"><img src="images/Twiter_dark.svg" alt="Twitter Icon"></a>
-            <a href="#"><img src="images/Medium_dark.svg" alt="Medium Icon"></a>
-        </div>
-     </footer>
+    <!-- Footer -->
+    <footer>
+      <div id="footer_icons">
+        <a href="#"><img src="images/GitHub_dark.svg" alt="Git-Hub Icon" /></a>
+        <a href="#"
+          ><img src="images/Linkedin_dark.svg" alt="Linkedin Icon"
+        /></a>
+        <a href="#"
+          ><img src="images/Angelist_dark.svg" alt="Angelist Icon"
+        /></a>
+        <a href="#"><img src="images/Twiter_dark.svg" alt="Twitter Icon" /></a>
+        <a href="#"><img src="images/Medium_dark.svg" alt="Medium Icon" /></a>
+      </div>
+    </footer>
     <!-- Javascript -->
     <script src="javascript.js"></script>
-</body>
+  </body>
 </html>

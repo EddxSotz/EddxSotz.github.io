@@ -110,6 +110,13 @@ Install this project with:
   </ul>
 </details>
 
+<details>
+  <summary><a href="https://eslint.org/">ESLint</a></summary>
+  <ul>
+    <li>Run: npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x</li>
+  </ul>
+</details>
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
@@ -121,6 +128,10 @@ Install this project with:
 - GitHub: [@githubhandle](https://github.com/EddxSotz)
 
 ## 👥 Contributors <a name="authors"></a>
+
+👤 **Nabeel Ahmed** 
+- GitHub: [@githubhandle](https://github.com/Metaverse-Nabeel)
+
 👤 **Junior Garcia** 
 - GitHub: [@githubhandle](https://github.com/JuniorGarciaRodriguez)
 
@@ -130,7 +141,7 @@ Install this project with:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
--None for now
+-Details popup window
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
