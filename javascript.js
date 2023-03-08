@@ -109,3 +109,9 @@ div.style.backgroundSize = "Cover"
 //append the whole div to the container 
 document.querySelector(".grid-container").appendChild(div);
 }
+
+//Pop up action
+
+button.addEventListener('click', () => {
+  
+});
