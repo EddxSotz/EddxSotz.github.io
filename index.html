@@ -30,8 +30,12 @@
             /></a>
           </li>
         </ul>
-        <a href="#" class="toggle-button"><img class="icon" src="images/BurgerButton.svg" alt="toggle Button"/></a>      
-        <a href="#" class="close-button"><img class="icon" src="images/CloseBtn.svg" alt="Close button"/></a>
+        <a href="#" class="toggle-button"
+          ><img class="icon" src="images/BurgerButton.svg" alt="toggle Button"
+        /></a>
+        <a href="#" class="close-button"
+          ><img class="icon" src="images/CloseBtn.svg" alt="Close button"
+        /></a>
       </nav>
     </header>
 
@@ -76,8 +80,7 @@
       <div class="featured_project">
         <div class="main_card"></div>
       </div>
-      <div class="grid-container"></div>       
-        
+      <div class="grid-container"></div>
     </section>
 
     <!-- About -->
@@ -144,10 +147,34 @@
         chat please get in touch.
       </h3>
 
-      <form action="https://formspree.io/f/xdovgbzg" method="POST" id="contact_form">
-        <input type="text" name="full_name" placeholder="Full name" maxlength="30" autocomplete="on" required/>
-        <input type="email" name="email" placeholder="Email address" autocomplete="on" required/>
-        <textarea name="message" id="text_box" placeholder="Enter text here" maxlength="500" required></textarea>
+      <form
+        action="https://formspree.io/f/xdovgbzg"
+        method="POST"
+        id="contact_form"
+      >
+        <input
+          type="text"
+          name="full_name"
+          placeholder="Full name"
+          maxlength="30"
+          autocomplete="on"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email address"
+          autocomplete="on"
+          required
+        />
+        <textarea
+          name="message"
+          id="text_box"
+          placeholder="Enter text here"
+          maxlength="500"
+          required
+        ></textarea>
         <input type="submit" value="Get in touch" id="contact_button" />
       </form>
     </div>

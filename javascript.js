@@ -292,3 +292,5 @@ for (let i = 0; i < arrayElements.length; i += 1) {
     });
   });
 }
+const form = document.getElementById('contact_form');
+const email = document.getElementById('email');
