@@ -1,5 +1,3 @@
-/* eslint-disable camelcase */
-/* eslint-disable prefer-destructuring */
 const toggleButton = document.querySelector('.toggle-button');
 const navbarLinks = document.querySelector('.nav-menu');
 const title = document.querySelector('.nav_title');
@@ -32,26 +30,26 @@ document.querySelectorAll('.nav-item').forEach((n) => n.addEventListener('click'
 const arrayElements = [];
 
 // define objects  with content for each project card
-const main_project = {
-  title: 'Multi-Post Stories', description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industries standard dummy textever since the 1500s, when an unknown printer took a standard dummy text.', features: ['HTML', 'CSS', 'Javascript'], imageURL: 'images/Img_Placeholder.png',
+const mainProject = {
+  title: 'Multi-Post Stories', description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industries standard dummy textever since the 1500s, when an unknown printer took a standard dummy text.', features: ['html', 'css', 'Javascript'], imageURL: 'images/Img_Placeholder.png',
 };
 const project1 = {
-  title: 'Website Portfolio', description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima voluptatibus saepe quae dolore', features: ['HTML', 'CSS', 'Javascript'], imageURL: 'images/Img_Placeholder-2.png',
+  title: 'Website Portfolio', description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima voluptatibus saepe quae dolore', features: ['html', 'css', 'Javascript'], imageURL: 'images/Img_Placeholder-2.png',
 };
 const project2 = {
-  title: 'Data Dashboard', description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima voluptatibus saepe quae dolore', features: ['HTML', 'CSS', 'Javascript'], imageURL: 'images/Img_Placeholder-3.png',
+  title: 'Data Dashboard', description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima voluptatibus saepe quae dolore', features: ['html', 'css', 'Javascript'], imageURL: 'images/Img_Placeholder-3.png',
 };
 const project3 = {
-  title: 'Brand website', description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima voluptatibus saepe quae dolore', features: ['HTML', 'CSS', 'Javascript'], imageURL: 'images/Img_Placeholder-4.png',
+  title: 'Brand website', description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima voluptatibus saepe quae dolore', features: ['html', 'css', 'Javascript'], imageURL: 'images/Img_Placeholder-4.png',
 };
 const project4 = {
-  title: 'Shopping Website', description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima voluptatibus saepe quae dolore', features: ['HTML', 'CSS', 'Javascript'], imageURL: 'images/Img_Placeholder-2.png',
+  title: 'Shopping Website', description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima voluptatibus saepe quae dolore', features: ['html', 'css', 'Javascript'], imageURL: 'images/Img_Placeholder-2.png',
 };
 const project5 = {
-  title: 'School Website', description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima voluptatibus saepe quae dolore', features: ['HTML', 'CSS', 'Javascript'], imageURL: 'images/Img_Placeholder-3.png',
+  title: 'School Website', description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima voluptatibus saepe quae dolore', features: ['html', 'css', 'Javascript'], imageURL: 'images/Img_Placeholder-3.png',
 };
 const project6 = {
-  title: 'eLearning Website', description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima voluptatibus saepe quae dolore', features: ['HTML', 'CSS', 'Javascript'], imageURL: 'images/Img_Placeholder-4.png',
+  title: 'eLearning Website', description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima voluptatibus saepe quae dolore', features: ['html', 'css', 'Javascript'], imageURL: 'images/Img_Placeholder-4.png',
 };
 
 // add objects to array
@@ -81,103 +79,105 @@ function removeBlur() {
 }
 
 // Dynamic content for main featured project card
-const main_project_container = document.querySelector('.featured_project');
-const main_card_content = document.querySelector('.main_card');
+/* eslint-disable prefer-destructuring */
+const mainProjectContainer = document.querySelector('.featured_project');
+const mainCardContent = document.querySelector('.main_card');
 
-const main_card_h3 = document.createElement('h3');
-main_card_h3.textContent = main_project.title;
+const mainCardH3 = document.createElement('h3');
+mainCardH3.textContent = mainProject.title;
 
-const main_card_p = document.createElement('p');
-main_card_p.textContent = main_project.description;
+const mainCardP = document.createElement('p');
+mainCardP.textContent = mainProject.description;
 
-const main_card_button = document.createElement('a');
-main_card_button.textContent = 'See Project';
-main_card_button.className = 'project-button';
+const mainCardButton = document.createElement('a');
+mainCardButton.textContent = 'See Project';
+mainCardButton.className = 'project-button';
 
-const main_card_tags = document.createElement('ul');
-main_card_tags.id = 'tags_featured';
+const mainCardTags = document.createElement('ul');
+mainCardTags.id = 'tags_featured';
 
-let main_card_tag_item = document.createElement('li');
-main_card_tag_item.textContent = main_project.features[0];
-main_card_tags.appendChild(main_card_tag_item);
-main_card_tag_item = document.createElement('li');
-main_card_tag_item.textContent = main_project.features[1];
-main_card_tags.appendChild(main_card_tag_item);
-main_card_tag_item = document.createElement('li');
-main_card_tag_item.textContent = main_project.features[2];
-main_card_tags.appendChild(main_card_tag_item);
+let mainCardTagItem = document.createElement('li');
+mainCardTagItem.textContent = mainProject.features[0];
+mainCardTags.appendChild(mainCardTagItem);
+mainCardTagItem = document.createElement('li');
+mainCardTagItem.textContent = mainProject.features[1];
+mainCardTags.appendChild(mainCardTagItem);
+mainCardTagItem = document.createElement('li');
+mainCardTagItem.textContent = mainProject.features[2];
+mainCardTags.appendChild(mainCardTagItem);
 
-main_card_content.appendChild(main_card_h3);
-main_card_content.appendChild(main_card_p);
-main_card_content.appendChild(main_card_tags);
-main_card_content.appendChild(main_card_button);
+mainCardContent.appendChild(mainCardH3);
+mainCardContent.appendChild(mainCardP);
+mainCardContent.appendChild(mainCardTags);
+mainCardContent.appendChild(mainCardButton);
 
-const main_project_img = document.createElement('img');
-main_project_img.id = 'featured_img';
-main_project_img.setAttribute('src', 'images/Img_Placeholder.png');
+const mainProjectImg = document.createElement('img');
+mainProjectImg.id = 'featured_img';
+mainProjectImg.setAttribute('src', 'images/Img_Placeholder.png');
 
-main_project_container.appendChild(main_card_content);
-main_project_container.appendChild(main_project_img);
+mainProjectContainer.appendChild(mainCardContent);
+mainProjectContainer.appendChild(mainProjectImg);
 
 // main card pop up action
-main_card_button.addEventListener('click', () => {
+mainCardButton.addEventListener('click', () => {
   const popup = document.createElement('div');
   popup.className = 'popup_container';
   popup.classList.add('text_styles');
 
-  const popup_header = document.createElement('div');
-  popup_header.className = 'popup_header';
-  popup_header.appendChild(main_card_h3);
-  popup_header.appendChild(main_card_tags);
+  const popupHeader = document.createElement('div');
+  popupHeader.className = 'popup_header';
+  popupHeader.appendChild(mainCardH3);
+  popupHeader.appendChild(mainCardTags);
 
-  const popup_img = document.createElement('img');
-  popup_img.setAttribute('src', 'images/Img_Placeholder.png');
+  const popupImg = document.createElement('img');
+  popupImg.setAttribute('src', 'images/Img_Placeholder.png');
 
-  const live_button = document.createElement('a');
-  live_button.textContent = ' See Live';
-  live_button.className = 'project-button';
+  const liveButton = document.createElement('a');
+  liveButton.textContent = ' See Live';
+  liveButton.className = 'project-button';
 
-  const source_button = document.createElement('a');
-  source_button.textContent = 'See Source';
-  source_button.className = 'project-button';
+  const sourceButton = document.createElement('a');
+  sourceButton.textContent = 'See Source';
+  sourceButton.className = 'project-button';
 
-  const see_live_icon = document.createElement('img');
-  see_live_icon.setAttribute('src', 'images/Icon-see live.svg'); see_live_icon.setAttribute('style', 'width: 16px; margin-left: 10px');
-  const source_icon = document.createElement('img');
-  source_icon.setAttribute('src', 'images/Git-Hub.svg'); source_icon.setAttribute('style', 'width: 16px; margin-left: 10px');
+  const seeLiveIcon = document.createElement('img');
+  seeLiveIcon.setAttribute('src', 'images/Icon-see live.svg'); seeLiveIcon.setAttribute('style', 'width: 16px; margin-left: 10px');
+  const sourceIcon = document.createElement('img');
+  sourceIcon.setAttribute('src', 'images/Git-Hub.svg'); sourceIcon.setAttribute('style', 'width: 16px; margin-left: 10px');
 
-  live_button.appendChild(see_live_icon);
-  source_button.appendChild(source_icon);
+  liveButton.appendChild(seeLiveIcon);
+  sourceButton.appendChild(sourceIcon);
 
-  const popup_info = document.createElement('div');
-  popup_info.className = 'popup_info';
-  popup_info.appendChild(main_card_p);
-  popup_info.appendChild(live_button);
-  popup_info.appendChild(source_button);
+  const popupInfo = document.createElement('div');
+  popupInfo.className = 'popup_info';
+  popupInfo.appendChild(mainCardP);
+  popupInfo.appendChild(liveButton);
+  popupInfo.appendChild(sourceButton);
 
-  const close_button = document.createElement('img');
-  close_button.setAttribute('src', 'images/CloseBtn_dark.svg');
-  close_button.id = 'close_btn';
+  const closeButton = document.createElement('img');
+  closeButton.setAttribute('src', 'images/Icon - Cancel.svg');
+  closeButton.id = 'close_btn';
 
-  popup.appendChild(close_button);
-  popup.appendChild(popup_info);
-  popup.appendChild(popup_header);
-  popup.appendChild(popup_img);
+  popup.appendChild(closeButton);
+  popup.appendChild(popupInfo);
+  popup.appendChild(popupHeader);
+  popup.appendChild(popupImg);
 
   document.body.appendChild(popup);
   addBlur();
 
-  close_button.addEventListener('click', () => {
+  closeButton.addEventListener('click', () => {
     document.body.removeChild(popup);
-    main_card_content.appendChild(main_card_h3);
-    main_card_content.appendChild(main_card_p);
-    main_card_content.appendChild(main_card_tags);
-    main_card_content.appendChild(main_card_button);
+    mainCardContent.appendChild(mainCardH3);
+    mainCardContent.appendChild(mainCardP);
+    mainCardContent.appendChild(mainCardTags);
+    mainCardContent.appendChild(mainCardButton);
     removeBlur();
   });
 });
 
 // iterate through each array element and create project card and content dynamically
+/* eslint-disable prefer-destructuring */
 
 for (let i = 0; i < arrayElements.length; i += 1) {
 // create the div element dinamically for each card
@@ -239,50 +239,50 @@ for (let i = 0; i < arrayElements.length; i += 1) {
     popup.className = 'popup_container';
     popup.classList.add('text_styles');
 
-    const popup_header = document.createElement('div');
-    popup_header.className = 'popup_header';
-    popup_header.appendChild(h4);
-    popup_header.appendChild(ul);
+    const popupHeader = document.createElement('div');
+    popupHeader.className = 'popup_header';
+    popupHeader.appendChild(h4);
+    popupHeader.appendChild(ul);
 
-    const popup_img = document.createElement('img');
-    popup_img.setAttribute('src', `${imgSource}`);
+    const popupImg = document.createElement('img');
+    popupImg.setAttribute('src', `${imgSource}`);
 
-    const live_button = document.createElement('a');
-    live_button.textContent = ' See Live';
-    live_button.className = 'project-button';
+    const liveButton = document.createElement('a');
+    liveButton.textContent = ' See Live';
+    liveButton.className = 'project-button';
 
-    const see_live_icon = document.createElement('img');
-    see_live_icon.setAttribute('src', 'images/Icon-see live.svg'); see_live_icon.setAttribute('style', 'width: 16px; margin-left: 10px');
-    live_button.appendChild(see_live_icon);
+    const seeLiveIcon = document.createElement('img');
+    seeLiveIcon.setAttribute('src', 'images/Icon-see live.svg'); seeLiveIcon.setAttribute('style', 'width: 16px; margin-left: 10px');
+    liveButton.appendChild(seeLiveIcon);
 
-    const see_source_button = document.createElement('a');
-    see_source_button.textContent = 'See source';
-    see_source_button.className = 'project-button';
+    const seeSourceButton = document.createElement('a');
+    seeSourceButton.textContent = 'See source';
+    seeSourceButton.className = 'project-button';
 
-    const source_icon = document.createElement('img');
-    source_icon.setAttribute('src', 'images/Git-Hub.svg'); source_icon.setAttribute('style', 'width: 16px; margin-left: 10px');
-    see_source_button.appendChild(source_icon);
+    const sourceIcon = document.createElement('img');
+    sourceIcon.setAttribute('src', 'images/Git-Hub.svg'); sourceIcon.setAttribute('style', 'width: 16px; margin-left: 10px');
+    seeSourceButton.appendChild(sourceIcon);
 
-    const popup_info = document.createElement('div');
-    popup_info.className = 'popup_info';
-    popup_info.appendChild(parragraph);
-    popup_info.appendChild(live_button);
-    popup_info.appendChild(see_source_button);
+    const popupInfo = document.createElement('div');
+    popupInfo.className = 'popup_info';
+    popupInfo.appendChild(parragraph);
+    popupInfo.appendChild(liveButton);
+    popupInfo.appendChild(seeSourceButton);
 
-    const close_button = document.createElement('img');
-    close_button.setAttribute('src', 'images/CloseBtn_dark.svg');
-    close_button.id = 'close_btn';
+    const closeButton = document.createElement('img');
+    closeButton.setAttribute('src', 'images/Icon - Cancel.svg');
+    closeButton.id = 'close_btn';
 
-    popup.appendChild(close_button);
-    popup.appendChild(popup_info);
-    popup.appendChild(popup_header);
-    popup.appendChild(popup_img);
+    popup.appendChild(closeButton);
+    popup.appendChild(popupInfo);
+    popup.appendChild(popupHeader);
+    popup.appendChild(popupImg);
 
     document.body.appendChild(popup);
 
     addBlur();
 
-    close_button.addEventListener('click', () => {
+    closeButton.addEventListener('click', () => {
       document.body.removeChild(popup);
       div.appendChild(h4);
       div.appendChild(parragraph);
