@@ -45,8 +45,7 @@
           <h4>Welcome to my portfolio website!</h4>
           <h4>
             I'm a web developer with a passion for crafting beautiful and
-            functional websites. I specialize in creating custom websites using
-            modern technologies such as HTML, CSS and JavaScript
+            functional websites.
           </h4>
         </div>
         <!-- Social media icons -->
@@ -140,15 +139,17 @@
 
     <div class="contact_container text_styles" id="Contact">
       <h3>
-        I'm always interested in hearing about new projects, so if you'd like to
-        chat please get in touch.
+        I specialize in creating custom websites using modern technologies, so if you are interested let's get in touch.
       </h3>
 
       <form action="https://formspree.io/f/xdovgbzg" method="POST" id="contact_form">
-        <input type="text" name="full_name" placeholder="Full name" maxlength="30" autocomplete="on" required/>
-        <input type="email" name="email" placeholder="Email address" autocomplete="on" required/>
-        <textarea name="message" id="text_box" placeholder="Enter text here" maxlength="500" required></textarea>
-        <input type="submit" value="Get in touch" id="contact_button" />
+        <input type="text" name="full_name" id="name" placeholder="Full name" maxlength="30" required/>
+        <input type="email" name="email" id="email" placeholder="Email address" required/>        
+        <textarea name="message" id="text_box" placeholder="Enter text here" maxlength="500" required></textarea>        
+        <div class="btnsGroup">
+        <button class="project-button" type="submit" aria-label="Submit-form">Get in touch</button>
+        <button class="project-button" type="reset" aria-label="Reset-form" id="reset">Reset Form</button>
+        </div>
       </form>
     </div>
     <!-- Footer -->

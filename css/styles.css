@@ -656,11 +656,21 @@ body {
   cursor: pointer;
 }
 
+.btnsGroup {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  border-bottom: none;
+}
+
+.btnsGroup button {
+  color: white;
+}
+
 @media (min-width: 768px) {
   .contact_container {
     grid-template-columns: repeat(2, 1fr);
     padding: 8.13rem 4rem;
-    height: 100vh;
   }
 
   .contact_container h3 {

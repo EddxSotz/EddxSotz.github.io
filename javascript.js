@@ -292,3 +292,41 @@ for (let i = 0; i < arrayElements.length; i += 1) {
     });
   });
 }
+
+//form validations 
+const user = document.getElementById('name');
+const email = document.getElementById('email');
+const textarea = document.getElementById('text_box');
+const form = document.getElementById('contact_form');
+const reset = document.getElementById('reset');
+
+email.addEventListener("input", (event) => {
+  if (email.validity.typeMismatch) {
+    email.setCustomValidity("Invalid email address");
+  } else {
+    email.setCustomValidity("");
+  }
+});
+
+form.addEventListener('input', () => {
+  const formData = {
+    name: user.value,
+    email: email.value,
+    message: textarea.value,
+  };
+  if (formData) {
+    localStorage.setItem('contactForm', JSON.stringify(formData));
+  }
+});
+
+const storedData = localStorage.getItem('contactForm');
+
+if (storedData) {
+  const tempData = JSON.parse(storedData);
+  user.value = tempData.name;
+  email.value = tempData.email;
+  textarea.value = tempData.message;
+}
+reset.addEventListener('click', () => {
+  localStorage.removeItem('contactForm');
+});
