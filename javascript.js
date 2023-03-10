@@ -293,20 +293,32 @@ for (let i = 0; i < arrayElements.length; i += 1) {
   });
 }
 
-//form validations 
+// form validations
 const user = document.getElementById('name');
 const email = document.getElementById('email');
 const textarea = document.getElementById('text_box');
 const form = document.getElementById('contact_form');
 const reset = document.getElementById('reset');
 
-email.addEventListener("input", (event) => {
+const containsUpper = /[A-Z]/g;
+let emailValue = '';
+
+email.addEventListener('input', () => {
+  emailValue = email.value;
   if (email.validity.typeMismatch) {
-    email.setCustomValidity("Invalid email address");
+    email.setCustomValidity('Invalid email address');
   } else {
-    email.setCustomValidity("");
+    email.setCustomValidity('');
   }
 });
+
+function emailUpperChecker() {
+  const foundUpper = emailValue.match(containsUpper);
+  if (!foundUpper) {
+    return false;
+  }
+  return true;
+}
 
 form.addEventListener('input', () => {
   const formData = {
@@ -329,4 +341,14 @@ if (storedData) {
 }
 reset.addEventListener('click', () => {
   localStorage.removeItem('contactForm');
+});
+
+form.addEventListener('submit', (event) => {
+  if (emailUpperChecker() === true) {
+    event.preventDefault();
+    email.setCustomValidity('Needs to be lowercase');
+  }
+  if (!email.validity.valid) {
+    event.preventDefault();
+  }
 });
