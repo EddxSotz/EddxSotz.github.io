@@ -75,7 +75,7 @@ body {
   position: relative;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
+  background-color: #022435;
   padding: 0 2rem;
   z-index: 1;
 }
@@ -127,7 +127,6 @@ body {
 
 .nav-item {
   list-style: none;
-  border-bottom: solid 1px gray;
 }
 
 .nav-item a {
@@ -139,11 +138,11 @@ body {
 }
 
 .nav-item a:hover {
-  background-color: #555;
+  background-color: #003a57;
   transform: translateY(-5px);
   transition: transform 0.3s;
   transition-timing-function: ease-out;
-  box-shadow: 0 0.5em 0.5em -0.4em #f55800;
+  box-shadow: 0 0.5em 0.5em -0.4em #26aa5b;
 }
 
 .toggle-button {
@@ -207,7 +206,10 @@ body {
 /****** Hero Section ********/
 
 .background {
-  background-color: #1c1a19;
+  background-color: #003049;
+  background-image: url("../images/Main_Background.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
   height: fit-content;
   overflow: hidden;
   position: relative;
@@ -234,9 +236,7 @@ body {
 }
 
 #hero_image {
-  margin-right: -300px;
-  margin-left: 70%;
-  margin-top: -25%;
+  max-width: 50%;
 }
 
 /************** Media Queries *************/
@@ -253,13 +253,6 @@ body {
     margin-right: 3rem;
     justify-content: space-around;
     height: 200px;
-  }
-
-  #hero_image {
-    max-width: 50%;
-    margin-right: -20%;
-    margin-top: -10%;
-    margin-left: 10%;
   }
 }
 
