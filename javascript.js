@@ -237,7 +237,6 @@ for (let i = 0; i < arrayElements.length; i += 1) {
 
   // Pop up action
   button.addEventListener('click', () => {
-
     const popup = document.createElement('div');
     popup.className = 'popup_container';
     popup.classList.add('text_styles');
