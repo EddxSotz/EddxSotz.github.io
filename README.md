@@ -22,7 +22,6 @@
   - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
@@ -127,21 +126,13 @@ Install this project with:
 
 - GitHub: [@githubhandle](https://github.com/EddxSotz)
 
-## 👥 Contributors <a name="authors"></a>
-
-👤 **Nabeel Ahmed** 
-- GitHub: [@githubhandle](https://github.com/Metaverse-Nabeel)
-
-👤 **Junior Garcia** 
-- GitHub: [@githubhandle](https://github.com/JuniorGarciaRodriguez)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
--Details popup window
+-None at this moment
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
