@@ -31,10 +31,10 @@ const arrayElements = [];
 
 // define objects  with content for each project card
 const mainProject = {
-  title: 'Multi-Post Stories', description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industries standard dummy textever since the 1500s, when an unknown printer took a standard dummy text.', features: ['html', 'css', 'Javascript'], imageURL: 'images/Img_Placeholder.png',
+  title: 'Indie Music Fest', description: 'A complete full fledged responsive website with multiple sections, a separate About page and dinamically generated items. In a few words a stable solid and functional website.', features: ['html', 'css', 'Javascript'], imageURL: 'images/Img_Placeholder.png', link: 'https://relaxed-gecko-38d404.netlify.app/',
 };
 const project1 = {
-  title: 'Website Portfolio', description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima voluptatibus saepe quae dolore', features: ['html', 'css', 'Javascript'], imageURL: 'images/Img_Placeholder-2.png',
+  title: 'Awesome Books', description: 'A site mainly focussed on funcionality that stores data on local storage, fully functional.', features: ['html', 'css', 'Javascript'], imageURL: 'images/Img_Placeholder-2.png', link: 'https://gilded-stroopwafel-3e21e8.netlify.app/',
 };
 const project2 = {
   title: 'Data Dashboard', description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima voluptatibus saepe quae dolore', features: ['html', 'css', 'Javascript'], imageURL: 'images/Img_Placeholder-3.png',
@@ -135,10 +135,12 @@ mainCardButton.addEventListener('click', () => {
   const liveButton = document.createElement('a');
   liveButton.textContent = ' See Live';
   liveButton.className = 'project-button';
+  liveButton.setAttribute('href', `${mainProject.link}`);
 
   const sourceButton = document.createElement('a');
   sourceButton.textContent = 'See Source';
   sourceButton.className = 'project-button';
+  sourceButton.setAttribute('href', 'https://github.com/EddxSotz/Capstone-Project-1');
 
   const seeLiveIcon = document.createElement('img');
   seeLiveIcon.setAttribute('src', 'images/Icon-see live.svg'); seeLiveIcon.setAttribute('style', 'width: 16px; margin-left: 10px');
@@ -235,6 +237,7 @@ for (let i = 0; i < arrayElements.length; i += 1) {
 
   // Pop up action
   button.addEventListener('click', () => {
+
     const popup = document.createElement('div');
     popup.className = 'popup_container';
     popup.classList.add('text_styles');
@@ -250,6 +253,7 @@ for (let i = 0; i < arrayElements.length; i += 1) {
     const liveButton = document.createElement('a');
     liveButton.textContent = ' See Live';
     liveButton.className = 'project-button';
+    liveButton.setAttribute('href', `${arrayElements[i].link}`);
 
     const seeLiveIcon = document.createElement('img');
     seeLiveIcon.setAttribute('src', 'images/Icon-see live.svg'); seeLiveIcon.setAttribute('style', 'width: 16px; margin-left: 10px');
@@ -258,6 +262,7 @@ for (let i = 0; i < arrayElements.length; i += 1) {
     const seeSourceButton = document.createElement('a');
     seeSourceButton.textContent = 'See source';
     seeSourceButton.className = 'project-button';
+    seeSourceButton.setAttribute('href', 'https://github.com/EddxSotz/Awesome-Books-ES6');
 
     const sourceIcon = document.createElement('img');
     sourceIcon.setAttribute('src', 'images/Git-Hub.svg'); sourceIcon.setAttribute('style', 'width: 16px; margin-left: 10px');

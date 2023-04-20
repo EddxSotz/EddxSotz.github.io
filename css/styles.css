@@ -366,6 +366,7 @@ body {
 
 .main_card h3 {
   font-family: var(--rubik_font_style);
+  margin-bottom: 1rem;
 }
 
 #tags_featured {
@@ -422,7 +423,8 @@ body {
 
 .card_content > h4 {
   font-weight: bold;
-  font-family: 'Crete Round', serif;
+  font-family: var(--rubik_font_style);
+  margin-bottom: 1rem;
 }
 
 .card_content > p {
@@ -441,7 +443,6 @@ body {
   background-color: rgba(255, 255, 255, 0.24);
   padding: 8px;
   margin-right: 5px;
-  font-family: 'poppins', sans-serif;
 }
 
 .popup_container {
@@ -464,7 +465,7 @@ body {
 
 .popup_header h4,
 .popup_header h3 {
-  font-family: 'Crete Round', serif;
+  font-family: var(--rubik_font_style);
   color: #091e42;
   margin-bottom: 1rem;
 }
@@ -639,6 +640,7 @@ body {
 
 .contact_container h3 {
   text-align: center;
+  margin-top: 6rem;
 }
 
 #contact_form {
@@ -656,7 +658,7 @@ body {
 }
 
 #contact_form input:hover {
-  box-shadow: 0 0.9em 0.8em -0.4em #091e42;
+  box-shadow: 0 0.9em 0.8em -0.4em #06a646;
 }
 
 #text_box {
